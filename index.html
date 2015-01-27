@@ -1,0 +1,40 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ToDo List</title>
+<script type="text/javascript" src="script/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="script/backend.js"></script>
+<link rel="stylesheet" href="css/todo.css" />
+<!-- 
+This code was made possible with the aid of these wonderful resources:
+http://innovativethought.net/2007/06/11/simulating-a-table-using-an-unordered-list/
+http://www.spritebox.net/
+Its a bit messy but, but... too little time
+Other mods that can be made is
+1) Checking for null text
+2) Re-numbering upon delete
+3) Better positioning of input text box
+-->
+</head>
+
+<body>
+<div id="addTask">
+<!--align this div in the middle later and other css stuff -->
+<p>Task: &nbsp; <input type="text" placeholder="Task Name" id="txtTask" /></p>
+<p><input type="button" id="btnSubmitTask" value="Submit" /> &nbsp; <input type="button" id="btnResetTask" value="Reset" /></p>
+</div>
+
+<div id="showTasks">
+<ul id="list_task">
+<li id="listitem" class="clearfix header">
+<div class="listitem_taskNum">Num.</div>
+<div class="listitem_taskName">Task Name</div>
+<div class="listitem_taskActions">Actions</div>
+</li>
+<!-- Start putting tasks here -->
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* CSS Document */
+.delete, .edit, .submit {
+  display: inline-block;
+  background-image:url(../images/glyphicons-halflings.png);
+  background-repeat: no-repeat;
+}
+
+.delete {
+  background-position: -308px -0px;
+height: 16px;
+  width: 16px;
+  left:20px;
+  }
+
+.edit {
+  background-position: -0px -72px;
+  height: 16px;
+  width: 16px;
+  left:0px;
+}
+
+.submit {
+	background-position: -72px -95px;
+	height:16px;
+	width:16px;
+	left:0px;
+}
+
+#list_task{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font: 11px Arial, Helvetica, Geneva, sans-serif;
+}
+
+#list_task li.header div{
+	background-color: #ccc;
+	font-weight:bold;
+	cursor:default;
+}
+
+#list_task li div {
+	display:block;
+	float:left;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	padding: 3px 5px;
+}
+
+#list_task li div.listitem_taskNum {width:50px; border-left:1px solid #ccc; height:20px}
+#list_task li div.listitem_taskName {width:300px; height:20px}
+#list_task li div.listitem_taskActions {width:100px; height:20px;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#actionsList
+{
+	position: relative;
+}
+
+#actionsList li {
+	position:absolute;
+	align:left;
+    list-style: none;
+
+}
+
+ #actionsList a {
+    height: 16px;
+    display: block;
+}
+
+#editedText
+{
+	height:inherit;
+	padding-top:-5px;
+	max-height:15px;
+	font: inherit;
+    color: inherit;
+    text-align: inherit;
+    outline: none;
+    cursor: text;
+}
